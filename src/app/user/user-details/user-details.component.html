@@ -1,0 +1,71 @@
+<div class="container shadow p-3 mb-5 mt-5 bg-white rounded user-font">
+  <div class="row">
+  <div class="container">
+    <div class="text-center"><h2>User Profile</h2></div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-4 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-3 ml-auto mr-auto">
+             <div class="profile text-center">
+                  <div class="avatar">
+                      <img src="{{user_profile?.img}}" alt="user_profile" class="img-raised rounded-circle img-fluid">
+                  </div>
+              </div>
+          </div>
+        </div>
+            <div class="col-md-6 mt-3 ml-auto mr-auto">
+              <a href="{{user_profile?.img}}" download target="_blank">
+                <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+              </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 text-center">
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col-6 mt-3 mb-3 text-left font-weight-bold">First Name : </div>
+            <div class="col-6 mt-3 mb-3 text-left">{{user_data?.firstName}}</div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-3 mb-3 text-left font-weight-bold">Last Name : </div>
+            <div class="col-6 mt-3 mb-3 text-left">{{user_data?.lastName}}</div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-3 mb-3 text-left font-weight-bold">E-mail : </div>
+            <div class="col-6 mt-3 mb-3 text-left">{{user_data?.email}}</div>
+        </div>
+        </div>
+    </div>
+    <div class="col-4 text-center">
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col-6 mt-3 mb-3 text-left font-weight-bold">User ID : </div>
+            <div class="col-6 mt-3 mb-3 text-left">{{user_data?.user_id}}</div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-3 mb-3 text-left font-weight-bold">Gender : </div>
+            <div class="col-6 mt-3 mb-3 text-left">{{user_data?.gender}}</div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-3 mb-3 text-left font-weight-bold">Mobile NO : </div>
+            <div class="col-6 mt-3 mb-3 text-left">{{user_data?.mobile}}</div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="container shadow p-3 pl-5 mb-5 mt-5 bg-white rounded user-font">
+  <h3>Intro : </h3>
+  <p>
+    Hii, in this application i am using user signup module and login module with jwt token,<br> In sign up module i used the required feilds like user first name, last name, gender and Contact details E-mail, Mobile number
+    <br>and the file upload module used in for user profile they can upload the profile image from sign up page and download it in the user details page,
+    <br>
+    <br>And these data stored in mongoDB by using REST api,
+    <br>The sign up page validate tha E-mail by Regex,
+    <br>The User ID, That was Dynamically genrated when each user signup.
+
+  </p>
+</div>

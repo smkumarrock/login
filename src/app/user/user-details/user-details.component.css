@@ -1,0 +1,8 @@
+.between-line {
+    border-right: 0.1px solid currentColor;
+    height: 35vh;
+}
+.user-font {
+    font-family: serif;
+    font-style: italic;
+}
